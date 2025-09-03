@@ -1,0 +1,44 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: bonder-box;
+}
+ .home{
+height: 50px;
+ }
+
+.box_busca{
+    position: relative;
+}
+
+.lupa{
+    height: 24px;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.bj{
+height: 60px;
+}
+
+.busca{
+    width: 500px;
+    height: 32px;
+    border-radius: 10px;
+    border: solid 1px #cccccc;
+}
+
+header{
+    background-color:#FFD188 ;
+    height: 80px;
+
+}
+div.conteiner_cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    background-color: rgb(245, 166, 63);
+    margin: 0 auto ;
+    height: 100%;
+    align-items: center;
+}
