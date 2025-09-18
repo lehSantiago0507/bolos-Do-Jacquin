@@ -1,52 +1,192 @@
-*{
-     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Bellota", system-ui;
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Bellota", system-ui;
 }
 
-.acessivel{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
- }
+.acessivel {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip-path: inset(50%);
+   white-space: nowrap;
+}
 
- .logo{
-    width: 240px;
- }
+body {
+   background-color: #fff6e8;
+}
 
- .card{
-     width: 260px;
-     height: 360px;
-     
-  
-    
-    text-decoration: none;
-    color: #ffffff;
+.main-home {
+   width: 90%;
+   max-width: 1440px;
+   margin: 0 auto;
+   /* background-color: #ec792c; */
+   display: flex;
 
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
+}
 
-    padding: 10px 10px 40px 10px;
-    justify-content: space-between ;
-    align-items: center;
-    font-size:25px;
-    box-shadow: 0 0 40px 2px #00000075;
- }
+.logo {
+   display: flex;
+   flex-direction: column;
+   width: 360px;
+   /* background-color: #ec622c; */
+   justify-content: space-between;
+   align-items: center;
+}
 
- .card-cacau{
-       background: linear-gradient(180deg,rgba(107, 57, 0, 1) 0%, rgba(59, 31, 0, 1) 100%);
- }
+.logo svg {
+   width: 240px;
+   margin-top: 20%;
+}
 
- .card svg:first-child{
-    width: 26px;
-    align-self: flex-end;
- }
+.logo img {
+   width: 300px;
+}
 
- .svg-cacau{
+.cards {
+   /* background-color: #f5ac59; */
+   width: calc(100% - 360px);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10%;
+   justify-content: center;
+
+}
+
+.card {
+   width: 260px;
+   height: 360px;
+
+
+
+   text-decoration: none;
+   color: #ffffff;
+
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+
+   padding: 10px 10px 40px 10px;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 25px;
+   box-shadow: 0 0 40px 2px #00000075;
+   margin: 50px 0;
+   
+   /*margin-bottom: 90px;*/
+}
+
+.card-cacau {
+   background: linear-gradient(180deg, rgba(107, 57, 0, 1) 0%, rgba(59, 31, 0, 1) 100%);
+}
+
+
+.card svg:first-child {
+   width: 26px;
+   align-self: flex-end;
+}
+
+.svg-cacau {
    width: 150px;
+}
+
+.card-2 {
+   background: linear-gradient(180deg, rgb(28, 177, 236) 0%, rgb(18, 72, 134) 100%);
+   
+}
+
+.card-3 {
+   background: linear-gradient(180deg, rgba(242, 29, 29, 1) 0%, rgb(107, 5, 5) 100%);
+   
+}
+
+.card-4 {
+   background: linear-gradient(219deg, rgba(29, 242, 29, 1) 0%, rgba(27, 138, 23, 1) 50%, rgba(15, 97, 3, 1) 100%);
+}
+
+.card-5 {
+   background: linear-gradient(0deg, rgba(97, 54, 6, 1) 0%, rgba(194, 123, 0, 1) 100%);
+}
+
+.card-6 {
+   background: linear-gradient(175deg, rgba(243, 74, 255, 1) 0%, rgba(98, 23, 122, 1) 100%);
+}
+
+.rodape {
+   
+   height: 100px;
+   background-color: #FFD17E;
+   
+   text-align: center;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.rodape p {
+   font-size: 30px;
+   font-family: "Julius Sans One", sans-serif;
+   text-align: center;
+}
+
+
+.whatsapp{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+    filter 0.5s ease-in-out
+}
+
+.whatsapp img{
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+    
+    
+    
+    
+}
+
+.whatsapp:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
  }
+
+
+
+
+@media screen and (max-width: 1050px) {
+   .main-home {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+   }
+   
+   .logo{
+      position: relative;
+      margin-top: 50px;
+   }
+   
+   .logo svg{
+      position: absolute;
+      top: 230px;
+      background-color: #FFD17E;
+      padding: 10px 40px 5px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px 2px #00000075;
+   }
+   
+   .logo img{
+      width: 150px;
+   }
+   
+   .cards{
+      width: 100%;
+   }
+   
+   
+   
+}
